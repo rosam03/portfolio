@@ -2,6 +2,8 @@
 body {
   font-family: 'Cabin', sans-serif;
   background-color: white;
+  width: 100%;
+      overflow-x: hidden;
 }
 
 .nav {
@@ -10,6 +12,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  border-bottom: 1px solid #64B5F6;
 }
 
 
@@ -48,15 +51,25 @@ a:hover {
 }
 
 .header {
-  background: -webkit-linear-gradient(#64B5F6, #fff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#64B5F6, #fff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#64B5F6, #fff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#64B5F6, #fff); /* Standard syntax (must be last) */
+  background-color: #64B5F6;
   color: white;
   padding: 3%;
   padding-top: 8%;
-  padding-bottom: 10%;
   display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.main img {
+  width:25%;
+  height: 25%;
+  float: left;
+  background-color: #64B5F6;
+  border-radius: 50%;
+  padding:2%;
+  margin: 2%;
+  margin-right: 10%;
+    display: inline-block;
 }
 
 .feature a {
@@ -82,16 +95,33 @@ a:hover {
 }
 
 .content div {
-  vertical-align: top;
-  display: inline-block;
-  width: 40%;
   text-align: left;
   margin-bottom: 5%;
   margin-right: 5%;
+  width: 80%;
 }
 
-.content p {
+.item {
+    border-bottom: 1px solid #ddd;
+    padding:5%;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item ul {
+  margin-left: 40%;
+  width: 50%;
+}
+
+.item p {
+  margin-bottom: 4%;
+}
+
+.item img {
   margin-bottom: 10%;
+  display: block;
 }
 
 .content a {
@@ -108,7 +138,6 @@ a:hover {
   width:30px;
   height: 30px;
   background-color: inherit;
-  padding-top: 2%;
 }
 
 
@@ -148,8 +177,8 @@ a:hover {
 }
 
 .aboutme {
-  padding-left: 25%;
-  padding-right: 25%;
+  float: left;
+  text-align: left;
 }
 
 
@@ -175,19 +204,28 @@ a:hover {
   font-weight: bold;
 }
 
+.project {
+  clear: both;
+}
+
 .description {
-  float: left;
-  width: 40%;
+display: inline-block;
+float: left;
+width: 50% !important;
 }
 
 .img {
-  display: inline;
-  float: right;
-  width: 40%;
+width: 40% !important;
+display: inline-block;
+float: right;
+margin-top: 2%;
+margin-bottom: 2%;
 }
 
 .img img {
-  margin: 2%;
+  width: 70%;
+  max-height: 500px;
+  display: inline;
 }
 
 .contact a {
@@ -202,4 +240,36 @@ a:hover {
 
 .contact img {
   width: 70px;
+}
+
+form {
+  width: 40%;
+  display: inline-block;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 30%;
+    border: 2px solid #64B5F6;
+    margin-left:35%;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 4px;
 }
