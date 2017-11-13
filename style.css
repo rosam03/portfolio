@@ -3,7 +3,6 @@ body {
   font-family: 'Cabin', sans-serif;
   background-color: white;
   width: 100%;
-      overflow-x: hidden;
 }
 
 .nav {
@@ -13,11 +12,12 @@ body {
   width: 100%;
   top: 0;
   border-bottom: 1px solid #64B5F6;
+  overflow-x: scroll;
 }
 
 
 .nav .title:hover {
-  background-color: #333;
+  background-color: inherit;
   cursor: default;
 }
 
@@ -29,6 +29,7 @@ body {
   background-color: white;
   display: inline;
   float: right;
+  max-width: 20%;
 }
 
 .nav li a {
@@ -58,6 +59,11 @@ a:hover {
   display: block;
   text-align: center;
   width: 100%;
+}
+
+.item {
+  display: block;
+  clear: both;
 }
 
 .main img {
@@ -104,28 +110,28 @@ a:hover {
 .item {
     border-bottom: 1px solid #ddd;
     padding:5%;
+    padding-bottom: 15%;
 }
+
 
 .item:last-child {
     border-bottom: none;
 }
 
-.item ul {
-  margin-left: 40%;
-  width: 50%;
-}
 
 .item p {
-  margin-bottom: 4%;
+  margin-bottom: 3%;
 }
 
 .item img {
   margin-bottom: 10%;
   display: block;
+
 }
 
 .content a {
   border: 1px solid #64B5F6;
+  margin-top: 5% !important;
 }
 
 .icons {
@@ -243,7 +249,7 @@ margin-bottom: 2%;
 }
 
 form {
-  width: 40%;
+  width: 50%;
   display: inline-block;
 }
 
@@ -257,9 +263,8 @@ input {
 }
 
 input[type=submit] {
-    width: 30%;
+    width: 50%;
     border: 2px solid #64B5F6;
-    margin-left:35%;
     background-color: white;
     cursor: pointer;
 }
