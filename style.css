@@ -1,0 +1,205 @@
+
+body {
+  font-family: 'Cabin', sans-serif;
+  background-color: white;
+}
+
+.nav {
+  color: #333;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+.nav .title:hover {
+  background-color: #333;
+  cursor: default;
+}
+
+.nav .active {
+  background-color: #64B5F6;
+}
+
+.nav li {
+  background-color: white;
+  display: inline;
+  float: right;
+}
+
+.nav li a {
+  float: left;
+  text-decoration: none;
+  display: block;
+}
+
+a {
+  background-color: white;
+  padding: 14px 18px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #ddd;
+}
+
+.header {
+  background: -webkit-linear-gradient(#64B5F6, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#64B5F6, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#64B5F6, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#64B5F6, #fff); /* Standard syntax (must be last) */
+  color: white;
+  padding: 3%;
+  padding-top: 8%;
+  padding-bottom: 10%;
+  display: block;
+}
+
+.feature a {
+  text-align: center;
+  padding: 3%;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #ff8b8e;
+  color: white;
+  border: none !important;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.content {
+  background-color: white;
+  margin-top: 5%;
+  padding: 3%;
+  padding-top: 0%;
+  display: block;
+  text-align: center;
+
+}
+
+.content div {
+  vertical-align: top;
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+
+.content p {
+  margin-bottom: 10%;
+}
+
+.content a {
+  border: 1px solid #64B5F6;
+}
+
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.icons img {
+  width:30px;
+  height: 30px;
+  background-color: inherit;
+  padding-top: 2%;
+}
+
+
+.footer {
+  color: #333;
+  background-color:#64B5F6;
+  padding: 3%;
+  width: 100%;
+  bottom: 0;
+  font-size: 12px;
+  border-top: 3px solid #64B5F6;
+  overflow: hidden;
+}
+
+.footer ul {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.footer li {
+  text-align: center;
+  display: inline;
+  border-right: 1px solid white;
+}
+
+.footer li:last-child {
+  border-right: none;
+}
+
+.footer a:hover {
+  background-color: inherit;
+}
+
+.footer a {
+  background-color: #64B5F6;
+}
+
+.aboutme {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+.portfolio .project {
+  display: inline-block;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio .project:last-child {
+  border-bottom: none;
+}
+
+.portfolio p {
+  margin-bottom: 5%;
+}
+
+.portfolio .skills {
+  font-size: 13px;
+  color: #ff8b8e;
+  font-weight: bold;
+}
+
+.description {
+  float: left;
+  width: 40%;
+}
+
+.img {
+  display: inline;
+  float: right;
+  width: 40%;
+}
+
+.img img {
+  margin: 2%;
+}
+
+.contact a {
+  border: none;
+  background-color: inherit;
+  padding-top: 2%;
+}
+
+.contact {
+  padding: 10%;
+}
+
+.contact img {
+  width: 70px;
+}
