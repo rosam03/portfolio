@@ -41,11 +41,12 @@ body {
 
 a {
   background-color: white;
-  padding: 14px 18px;
+  padding: 14px 20px;
   color: #333;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+  height: 20px;
 }
 
 a:hover {
@@ -56,7 +57,7 @@ a:hover {
   background-color: #64B5F6;
   color: white;
   padding: 3%;
-  padding-top: 8%;
+  padding-top: 12%;
   display: block;
   text-align: center;
   width: 100%;
