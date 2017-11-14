@@ -86,7 +86,7 @@ a:hover {
 }
 
 .graphics {
-  margin-top: 3%;
+
   width: 25%;
   float: left;
 }
@@ -258,9 +258,9 @@ textarea {
 }
 
 .interests {
-  float: left;
   display: inline-block;
-  width: 50%;
+  width: 49%;
+  min-width: 300px;
 }
 
 .content li {
@@ -268,7 +268,7 @@ textarea {
 }
 
 .contact {
-  float: right;
   display: inline-block;
-  width: 50%;
+  width: 49%;
+  min-width: 300px;
 }
