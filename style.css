@@ -370,6 +370,18 @@ textarea {
 
   }
 
+  /* Interests and contact */
+  .interests {
+    border-bottom: 2px solid #ddd;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .interests, .contact {
+    width: 100%;
+    clear: both;
+  }
+
   /* Portfolio projects */
 
   .description {
