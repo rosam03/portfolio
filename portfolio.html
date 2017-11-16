@@ -1,163 +1,159 @@
 <!DOCTYPE html>
 <html>
+   <head>
+      <title>Rosa's Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+      <meta name="description" content="Rosa Mohammadi's online portfolio - an upcoming computer engineering graduate">
+      <meta name="keywords" content="Software engineers, vancouver, students, computer engineers, technology, recruit, internship, developers">
+      <meta name="author" content="Rosa Mohammadi">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="js/main.js"></script>
+   </head>
 
-<head>
-	<title>Rosa's Portfolio</title>
+   <body  onscroll="hide_dropdown()">
 
-	<link rel="stylesheet" href="style.css">
+		 <!-- Navigation menu -->
+      <div class="nav">
+         <div class="toggle">
+            <li style="float:left"><a class="title" href="#">ROSA MOHAMMADI</a></li>
+            <li><a class="active" href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="index.html">HOME</a></li>
+         </div>
+         <div class="dropdown">
+            <li id="name" style="float:left; display:inline;"><a class="title" href="#" >ROSA MOHAMMADI</a></li>
+            <li onclick="display_dropdown()" style="clear:none;" id="nav-btn"><a href="javascript:void(0)"><img src="http://www.myiconfinder.com/uploads/iconsets/256-256-042663fcf25e4dfa31c246813829b3d5.png"></a></li>
+            <li><a class="active" href="#" onclick="hide_dropdown()">PORTFOLIO</a></li>
+            <li><a href="about.html" >ABOUT ME</a></li>
+            <li><a href="index.html" >HOME</a></li>
+         </div>
+      </div>
+      </div onclick="hide_dropdown()">
 
-	<meta charset="UTF-8">
-	<meta name="description" content="Rosa Mohammadi's online portfolio - an upcoming computer engineering graduate">
-	<meta name="keywords" content="Software engineers, vancouver, students, computer engineers, technology, recruit, internship, developers">
-	<meta name="author" content="Rosa Mohammadi">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Header -->
+      <div class="header" >
+         <h1>Portfolio</h1>
+      </div>
 
-</head>
+			<!-- Main content and projects-->
+      <div class="content portfolio" >
+         <div class="project">
+            <div class="description">
+               <div class="feature"><a>FEATURED</a></div>
+               <h1>Agriculture Optimization</h1>
+               <p>In a team of 5, we are building a mesh network of sensors to monitor the environment plants grow in to optimize plant production and profitability.
+               <ul>
+                  <li>Gathered requirements and produced design</li>
+                  <li>Currently building prototype and developing code</li>
+               </ul>
+               </p>
+               <p class="skills">Skills: C </br></br>
+                  Microcontrollers, embedded technology
+               </p>
+            </div>
+            <div class="img">
+               <img src="images/p_agriculture.jpg">
+            </div>
+         </div>
+         <div class="project">
+            <div class="description">
+               <h1>Restaurant Ordering Management System</h1>
+               <p>In a team of 4, we created an ordering system that allows customers to wirelessly order from their table, sending this data to a mobile app to be tracked by waiters, and providing high-resolution analytics to help managers make informed decisions.
+               <ul>
+                  <li>Implemented Bluetooth between microcontroller and Android mobile app</li>
+                  <li>Designed API to enable mobile and web app interaction with server</li>
+                  <li>Increased security of system by assigning roles and authorization tokens to users to enforce Principles of Least Privilege</li>
+                  <li>Implemented login functionality and menu form on web app</li>
+               </ul>
+               </p>
+               <p class="skills">Skills: C, Java, JavaScript, HTML, CSS</br></br>
+                  Front end web development, Android App development, FPGA, embedded bluetooth
+               </p>
+            </div>
+            <div class="img">
+               <img src="images/p_datadining1.png">
+            </div>
+         </div>
+         <div class="project">
+            <div class="description">
+               <h1>UBC Library Finder</h1>
+               <p>Created a simple Android app to provide directions to the nearest UBC library using the Google Maps API.
+               </p>
+               <p class="skills">Skills: Java</br></br>
+                  Android app development, Google Maps API
+               </p>
+            </div>
+            <div class="img">
+               <img src="images/p_ubclibrary.png" width="90%" height="90%">
+            </div>
+         </div>
+         <div class="project">
+            <div class="description">
+               <div class="feature"><a>UNDER DEVELOPMENT</a></div>
+               <h1>Instagram Business Social</h1>
+               <p>Currently building a custom web application to help clients reach their desired target audience on Instagram. The client specifies a hashtag that their audience may use and the application searches for users using that hashtag. The application interacts with these users from the clients Instagram page, increasing user engagement and attracting potential business.
+               <ul>
+                  <li>Interfaced with the Instagram API to authenticate users and perform specific actions</li>
+                  <li>Made use of a SQL database to store user information and preferences including target audience</li>
+               </ul>
+               </p>
+               <p class="skills">Skills: SQLite, Python Flask, HTML, CSS</br></br>
+                  Full stack web development, Instagram API
+               </p>
+            </div>
+            <div class="img">
+            </div>
+         </div>
+         <div class="project">
+            <div class="description">
+               <h1>OS161</h1>
+               <p>OS161 is a Unix based operating system used for teaching purposes. I Implemented crucial parts of the kernel, such as synchronization primitives, processes and file tables, and system calls. </br></br>
+                  <strong>System calls:</strong>
+               <ul>
+                  <li>open, close</li>
+                  <li>read, write</li>
+                  <li>chdir</li>
+                  <li>lseek, dup2</li>
+                  <li>exit</li>
+                  <li>fork, execv</li>
+                  <li>getpid, waitpid</li>
+               </ul>
+               </p>
+               <p class="skills">Skills: C</br></br>
+                  Unix operating systems
+               </p>
+            </div>
+            <div class="img">
+            </div>
+         </div>
+         <div class="project">
+            <div class="description">
+               <h1>Mock UBC Bookstore</h1>
+               <p>In a team of 2, we developed a mock bookstore allowing a customer to add/remove items from their cart and check out. We made use of interval timers to check for user inactivity, a database to store product and order information, and a server to handle the orders and inventory.
+               </p>
+               <p class="skills">Skills: MongoDB, JavaScript, Node.js, HTML, CSS</br></br>
+                  Full stack web development, Web API, Heroku deployment platform
+               </p>
+            </div>
+            <div class="img">
+               <img src="images/p_bookstore.png" width="90%" height="90%">
+            </div>
+         </div>
+      </div>
+      </div>
 
-<body>
-
-	<div class="nav">
-		<li style="float:left"><a class="title" href="#">ROSA MOHAMMADI</a></li>
-		<li><a class="active" href="portfolio.html">PORTFOLIO</a></li>
-		<li><a href="about.html">ABOUT ME</a></li>
-		<li><a href="index.html">HOME</a></li>
-	</div>
-
-	<div class="header">
-		<h1>Portfolio</h1>
-	</div>
-
-	<div class="content portfolio">
-
-		<div class="project">
-			<div class="description">
-				<div class="feature"><a>FEATURED</a></div>
-				<h1>Agriculture Optimization</h1>
-				<p>In a team of 5, we are building a mesh network of sensors to monitor the environment plants grow in to optimize plant production and profitability.
-					<ul>
-						<li>Gathered requirements and produced design</li>
-						<li>Currently building prototype and developing code</li>
-					</ul>
-				</p>
-
-				<p class="skills">Skills: C </br></br>
-					Microcontrollers, embedded technology</p>
-				</div>
-				<div class="img">
-					<img src="images/p_agriculture.jpg">
-				</div>
-			</div>
-
-
-			<div class="project">
-				<div class="description">
-					<h1>Restaurant Ordering Management System</h1>
-					<p>In a team of 4, we created an ordering system that allows customers to wirelessly order from their table, sending this data to a mobile app to be tracked by waiters, and providing high-resolution analytics to help managers make informed decisions.
-						<ul>
-							<li>Implemented Bluetooth between microcontroller and Android mobile app</li>
-							<li>Designed API to enable mobile and web app interaction with server</li>
-							<li>Increased security of system by assigning roles and authorization tokens to users to enforce Principles of Least Privilege</li>
-							<li>Implemented login functionality and menu form on web app</li>
-						</ul>
-					</p>
-
-					<p class="skills">Skills: C, Java, JavaScript, HTML, CSS</br></br>
-						​Front end web development, Android App development, FPGA, embedded bluetooth</p>
-					</div>
-					<div class="img">
-						<img src="images/p_datadining1.png">
-					</div>
-				</div>
-
-
-				<div class="project">
-					<div class="description">
-						<h1>UBC Library Finder</h1>
-						<p>Created a simple Android app to provide directions to the nearest UBC library using the Google Maps API.
-						</p>
-
-						<p class="skills">Skills: Java</br></br>
-							​Android app development, Google Maps API</p>
-						</div>
-						<div class="img">
-							<img src="images/p_ubclibrary.png" width="90%" height="90%">
-						</div>
-					</div>
-
-					<div class="project">
-						<div class="description">
-							<div class="feature"><a>UNDER DEVELOPMENT</a></div>
-							<h1>Instagram Business Social</h1>
-							<p>Currently building a custom web application to help clients reach their desired target audience on Instagram. The client specifies a hashtag that their audience may use and the application searches for users using that hashtag. The application interacts with these users from the clients Instagram page, increasing user engagement and attracting potential business.
-								<ul>
-									<li>Interfaced with the Instagram API to authenticate users and perform specific actions</li>
-									<li>Made use of a SQL database to store user information and preferences including target audience</li>
-								</ul>
-							</p>
-
-							<p class="skills">Skills: SQLite, Python Flask, HTML, CSS</br></br>
-								​Full stack web development, Instagram API</p>
-							</div>
-							<div class="img">
-							</div>
-						</div>
-
-
-						<div class="project">
-							<div class="description">
-								<h1>OS161</h1>
-								<p>OS161 is a Unix based operating system used for teaching purposes. I Implemented crucial parts of the kernel, such as synchronization primitives, processes and file tables, and system calls. </br></br>
-									<strong>System calls:</strong>
-									<ul>
-										<li>open, close</li>
-										<li>read, write</li>
-										<li>chdir</li>
-										<li>lseek, dup2</li>
-										<li>exit</li>
-										<li>fork, execv</li>
-										<li>getpid, waitpid</li>
-									</ul>
-								</p>
-
-								<p class="skills">Skills: C</br></br>
-									​Unix operating systems</p>
-								</div>
-								<div class="img">
-								</div>
-							</div>
-
-
-							<div class="project">
-								<div class="description">
-									<h1>Mock UBC Bookstore</h1>
-									<p>In a team of 2, we developed a mock bookstore allowing a customer to add/remove items from their cart and check out. We made use of interval timers to check for user inactivity, a database to store product and order information, and a server to handle the orders and inventory.
-									</p>
-
-									<p class="skills">Skills: MongoDB, JavaScript, Node.js, HTML, CSS</br></br>
-										​Full stack web development, Web API, Heroku deployment platform</p>
-									</div>
-									<div class="img">
-										<img src="images/p_bookstore.png" width="90%" height="90%">
-									</div>
-								</div>
-
-							</div>
-
-
-
-						</div>
-
-						<div class="footer">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About Me</a></li>
-							</ul>
-							<div class="icons">
-								<a href="https://www.linkedin.com/in/rosamohammadi"><img src="images/linkedin.png"></a>
-								<a href="https://www.github.com/rosam03"><img src="images/github.png"></a>
-							</div>
-						</div>
-
-					</body>
-
-					</html>
+			<!-- Footer -->
+      <div class="footer">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+         </ul>
+         <div class="icons">
+            <a href="https://www.linkedin.com/in/rosamohammadi"><img src="images/linkedin.png"></a>
+            <a href="https://www.github.com/rosam03"><img src="images/github.png"></a>
+         </div>
+      </div>
+      </div>
+   </body>
+</html>

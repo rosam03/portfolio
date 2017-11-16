@@ -1,123 +1,126 @@
 <!DOCTYPE html>
 <html>
+   <head>
+      <title>Rosa's Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+      <meta charset="UTF-8">
+      <meta name="description" content="Rosa Mohammadi's online portfolio - an upcoming computer engineering graduate">
+      <meta name="keywords" content="Software engineers, vancouver, students, computer engineers, technology, recruit, internship, developers">
+      <meta name="author" content="Rosa Mohammadi">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="js/main.js"></script>
+   </head>
 
-<head>
-	<title>Rosa's Portfolio</title>
+   <body  onscroll="hide_dropdown()">
 
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		 <!-- Navigation menu -->
+      <div class="nav">
+         <div class="toggle">
+            <li style="float:left"><a class="title" href="#">ROSA MOHAMMADI</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a class="active" href="#">HOME</a></li>
+         </div>
+         <div class="dropdown">
+            <li id="name" style="float:left; display:inline;"><a class="title" href="#" >ROSA MOHAMMADI</a></li>
+            <li onclick="display_dropdown()" style="clear:none;" id="nav-btn"><a href="javascript:void(0)"><img src="http://www.myiconfinder.com/uploads/iconsets/256-256-042663fcf25e4dfa31c246813829b3d5.png"></a></li>
+            <li><a href="portfolio.html" >PORTFOLIO</a></li>
+            <li><a href="about.html" >ABOUT ME</a></li>
+            <li><a class="active" href="#" onclick="hide_dropdown()" >HOME</a></li>
+         </div>
+      </div>
+      <div onclick="hide_dropdown()">
 
-	<meta charset="UTF-8">
-	<meta name="description" content="Rosa Mohammadi's online portfolio - an upcoming computer engineering graduate">
-	<meta name="keywords" content="Software engineers, vancouver, students, computer engineers, technology, recruit, internship, developers">
-	<meta name="author" content="Rosa Mohammadi">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<!-- Header -->
+         <div class="header" >
+            <h1>Computer Engineering Student</h1>
+         </div>
 
-</head>
+				 <!-- Content -->
+         <div class="content" >
+            <div class="item">
+               <div class="graphics"><img src="images/person.png"></div>
+               <div class="text">
+                  <h1>passion for problem solving</h1>
+                  <p>I pursued a degree in engineering because I love solving complex problems and creating unique solutions to issues that haven't been solved before. </br> </br>
+                     My interest is regardless of context; I love learning new things which is why I'm interested in a career in various parts of computer engineering. Whether it be the cars we drive or the apps we use to keep in touch with friends and family, I want to use my skills to make a difference in people's lives.
+                  </p>
+                  <a href="about.html">More</a>
+               </div>
+               <div class="border" style="clear:both;"></div>
+            </div>
+            <div class="item">
+               <div class="graphics"><img src="images/html.png"></div>
+               <div class="text">
+                  <h1>experience in multiple areas</h1>
+                  <p>My interest doesn't end with the school or work day, I've worked on numerous personal projects as well. From building my own music library to discovering payment processing vulnerabilities, I've been able to utilize my skills across the field.
+                  <ul>
+                     <li>Full-stack web development</li>
+                     <li>Embedded systems</li>
+                     <li>Android apps</li>
+                     <li>Computer networks</li>
+                     <li>Hardware architecture</li>
+                     <li>Secure coding</li>
+                  </ul>
+                  </p>
+                  <a href="portfolio.html">More</a>
+               </div>
+               <div class="border" style="clear:both;"></div>
+            </div>
+            <div class="item">
+               <div class="interests">
+                  <div class="item">
+                     <div class="graphics"><img src="images/hobbies.png"></div>
+                     <div class="text">
+                        <h1>hobbies and interests</h1>
+                        <p>
+                        <ul>
+                           <li>Lifting weights and outdoor activities</li>
+                           <li>Converted Pitsburgh Penguins fan!</li>
+                           <li>Comedy shows - I like to think I'm funny too. </li>
+                           <li>Making and fixing things..<i>all things, any things!</i></li>
+                           <li>Netflix binge watching <i>(Suits, The Office, Shark Tank)</i></li>
+                           <li>Sewing and designing clothes</li>
+                           <li>Self-help books<i>: the last I read was 'You are a Badass' by Jen Sincero. Highly recommend it if you feel like your're lacking motivation!</i></li>
+                           <li>Spending quality time with my sisters</li>
+                           <li>Winding down with a glass of wine!</li>
+                        </ul>
+                        </p>
+                     </div>
+                     <div class="border" style="clear:both;"></div>
+                  </div>
+               </div>
+               <div class="contact">
+                  <div class="graphics"><img src="images/contact.png"></div>
+                  <div class="text">
+                     <h1>have questions or feedback? email me</h1>
+                     <p>
+                     <form action="https://formspree.io/rosamohammadi@hotmail.com"
+                        method="POST" target="_blank">
+                        Full Name: <input type="text" name="name">
+                        Your Email: <input type="email" name="_replyto">
+                        Message: <textarea type="text" name="message" rows="10"></textarea>
+                        <input type="submit" value="Send">
+                     </form>
+                     </p>
+                  </div>
+               </div>
+               <div class="border" style="clear:both;"></div>
+            </div>
+         </div>
 
-<body>
-
-	<div class="nav">
-		<li style="float:left"><a class="title" href="#">ROSA MOHAMMADI</a></li>
-		<li><a href="portfolio.html">PORTFOLIO</a></li>
-		<li><a href="about.html">ABOUT ME</a></li>
-		<li><a class="active" href="#">HOME</a></li>
-	</div>
-
-	<div class="header">
-		<h1>Computer Engineering Student</h1>
-	</div>
-
-	<div class="content">
-
-		<div class="item">
-
-			<div class="graphics"><img src="images/person.png"></div>
-			<div class="text">
-				<h1>passion for problem solving</h1>
-				<p>I pursued a degree in engineering because I love solving complex problems and creating unique solutions to issues that haven't been solved before. </br> </br>
-
-					My interest is regardless of context; I love learning new things which is why I'm interested in a career in various parts of computer engineering. Whether it be the cars we drive or the apps we use to keep in touch with friends and family, I want to use my skills to make a difference in people's lives.</p>
-					<a href="about.html">Read more</a>
-				</div>
-				<div class="border" style="clear:both;"></div>
-			</div>
-
-			<div class="item">
-
-				<div class="graphics"><img src="images/html.png"></div>
-				<div class="text">
-					<h1>experience in multiple areas</h1>
-					<p>My interest doesn't end with the school or work day, I've worked on numerous personal projects as well. From building my own music library to discovering payment processing vulnerabilities, I've been able to utilize my skills across the field.
-						<ul>
-							<li>Full-stack web development</li>
-							<li>Embedded systems</li>
-							<li>Android apps</li>
-							<li>Computer networks</li>
-							<li>Hardware architecture</li>
-							<li>Secure coding</li>
-						</ul>
-					</p>
-					<a href="portfolio.html">View more</a>
-				</div>
-
-				<div class="border" style="clear:both;"></div>
-			</div>
-
-
-			<div class="item">
-				<div class="interests">
-					<div class="item">
-						<div class="graphics"><img src="images/hobbies.png"></div>
-						<div class="text">
-							<h1>hobbies and interests</h1>
-							<p>
-								<ul>
-									<li>Lifting weights and outdoor activities</li>
-									<li>Making and fixing things -<i>all things, any things!</i></li>
-									<li>Netflix binge watching <i>(Suits, The Office, Law and Order)</i></li>
-									<li>Sewing and designing clothes</li>
-									<li>Self-help books<i>: the last I read was 'You are a Badass' by Jen Sincero. Highly recommend it if you feel like your're lacking motivation!</i></li>
-									<li>Spending quality time with my sisters</li>
-									<li>Winding down with a glass of wine!</li>
-								</ul>
-							</p>
-						</div>
-						<div class="border" style="clear:both;"></div>
-					</div></div>
-
-					<div class="contact">
-						<div class="graphics"><img src="images/contact.png"></div>
-						<div class="text">
-							<h1>email me</h1>
-							<p>
-								<form action="https://formspree.io/rosamohammadi@hotmail.com"
-								method="POST" target="_blank">
-								Full Name: <input type="text" name="name">
-								Your Email: <input type="email" name="_replyto">
-								Message: <textarea type="text" name="message" rows="10"></textarea>
-								<input type="submit" value="Send">
-							</form>
-						</p>
-					</div>
-				</div>
-				<div class="border" style="clear:both;"></div>
-			</div>
-
-
-		</div>
-
-		<div class="footer">
-			<ul>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-			</ul>
-			<div class="icons">
-				<a href="https://www.linkedin.com/in/rosamohammadi"><img src="images/linkedin.png"></a>
-				<a href="https://www.github.com/rosam03"><img src="images/github.png"></a>
-			</div>
-		</div>
-
-	</body>
-
-	</html>
+				 <!-- Footer -->
+         <div class="footer">
+            <ul>
+               <li><a href="about.html">About Me</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+            <div class="icons">
+               <a href="https://www.linkedin.com/in/rosamohammadi"><img src="images/linkedin.png"></a>
+               <a href="https://www.github.com/rosam03"><img src="images/github.png"></a>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

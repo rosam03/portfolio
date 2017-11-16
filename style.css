@@ -2,20 +2,35 @@
 body {
   font-family: 'Cabin', sans-serif;
   background-color: white;
+  color: #444;
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
-.nav {
+a {
+  padding: 14px 20px;
   color: #333;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  height: 20px;
+  min-width: 20%;
+}
+
+a:hover {
+  background-color: #ddd;
+}
+
+/* Main navigation bar */
+
+.nav {
   background-color: white;
   position: fixed;
   width: 100%;
   top: 0;
   border-bottom: 1px solid #64B5F6;
-  overflow-x: scroll;
 }
-
 
 .nav .title:hover {
   background-color: inherit;
@@ -33,35 +48,79 @@ body {
   max-width: 20%;
 }
 
+.nav li:first-child {
+  max-width: 50%;
+}
+
 .nav li a {
   float: left;
   text-decoration: none;
   display: block;
 }
 
-a {
-  background-color: white;
-  padding: 14px 20px;
-  color: #333;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  height: 20px;
+/* Dropdown navigation bar */
+
+.nav .dropdown {
+  width: 100%;
+  display: none;
+  visibility: hidden;
 }
 
-a:hover {
-  background-color: #ddd;
+.nav .dropdown li {
+  clear: both;
+  border-bottom: 1px solid #333;
+  margin-right: 10%;
+  width: 40%;
+  max-width: 40% !important;
 }
+
+#nav-btn {
+  border: none;
+  width: 20%;
+  max-width: 20%;
+}
+
+#nav-btn a {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-btn img {
+  width: 30%;
+  max-width: 30px;
+  top:0;
+  background: #64B5F6;
+  padding: 5px;
+  border-radius: 15%;
+  float: right;
+  margin: 5px;
+}
+
+.nav .dropdown li:first-child {
+  border: none;
+  max-width: 50%;
+}
+
+.nav .dropdown a {
+  width: 100%;
+  background-color: inherit;
+}
+
+/* Header of each page */
 
 .header {
+  overflow-x: hidden;
   background-color: #64B5F6;
   color: white;
   padding: 3%;
   padding-top: 12%;
   display: block;
   text-align: center;
-  width: 100%;
+  min-width: 100%;
 }
+
+/* Home page sections */
 
 .item {
   display: block;
@@ -113,18 +172,49 @@ a:hover {
   margin-bottom: 0%;
 }
 
-
-.feature a {
-  text-align: center;
-  padding: 3%;
-  font-weight: bold;
-  font-size: 10px;
-  background-color: #ff8b8e;
-  color: white;
-  border: none !important;
-  padding-right: 10%;
-  padding-left: 10%;
+.interests {
+  display: inline-block;
+  width: 49%;
+  min-width: 320px;
 }
+
+.contact {
+  display: inline-block;
+  width: 49%;
+  min-width: 320px;
+}
+
+form {
+  width: 80%;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  width: 50%;
+  border: 2px solid #64B5F6;
+  background-color: white;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Main section */
 
 .content {
   background-color: white;
@@ -134,6 +224,12 @@ a:hover {
   text-align: left;
   width: 100%;
 }
+
+.content li {
+  padding: 1%;
+}
+
+/* Footer */
 
 .icons {
   margin-left: auto;
@@ -182,6 +278,19 @@ a:hover {
   background-color: #64B5F6;
 }
 
+/* Portfolio */
+
+.feature a {
+  text-align: center;
+  padding: 3%;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #ff8b8e;
+  color: white;
+  border: none !important;
+  padding-right: 10%;
+  padding-left: 10%;
+}
 
 .portfolio .project {
   display: inline-block;
@@ -210,11 +319,13 @@ a:hover {
 .description {
   display: inline-block;
   float: left;
-  width: 50% !important;
+  width: 50%;
+  min-width: 320px;
 }
 
 .img {
-  width: 40% !important;
+  width: 40%;
+  min-width: 320px;
   display: inline-block;
   float: right;
   margin-top: 2%;
@@ -227,49 +338,50 @@ a:hover {
   display: inline;
 }
 
-form {
-  width: 80%;
-  display: inline-block;
-}
+/* Page responsiveness */
 
-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-}
+@media only screen and (max-width: 767px) {
 
-input[type=submit] {
-  width: 50%;
-  border: 2px solid #64B5F6;
-  background-color: white;
-  cursor: pointer;
-}
+  /* Navigation dropdown and bar */
 
+  .nav .toggle {
+    display: none;
+    visibility: hidden;
+  }
 
-textarea {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ddd;
-  border-radius: 4px;
-}
+  .nav .toggle li {
+    display: none;
+    visibility: hidden;
+  }
 
-.interests {
-  display: inline-block;
-  width: 49%;
-  min-width: 300px;
-}
+  .nav .dropdown {
+    display: block;
+    visibility: visible;
+  }
 
-.content li {
-  padding: 1%;
-}
+  .nav .dropdown li {
+    display: none;
+    visibility: hidden;
+  }
 
-.contact {
-  display: inline-block;
-  width: 49%;
-  min-width: 300px;
+  #name, #nav-btn {
+    visibility: visible;
+    display: block;
+
+  }
+
+  /* Portfolio projects */
+
+  .description {
+    width: 80% !important;
+    display: block;
+    clear: both;
+  }
+
+  .img {
+    display: block;
+    clear: both !important;
+    float: left !important;
+  }
+
 }
