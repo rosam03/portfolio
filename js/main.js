@@ -6,7 +6,7 @@
 function display_dropdown() {
 	var elements = document.getElementsByClassName('dropdown')[0].getElementsByTagName('li');
 
-	for (var i = 0; i < elements.length; i++) {
+	for (var i = 0; i < elements.length; i += 1) {
 		elements[i].style.visibility = "visible";
 		elements[i].style.display = "block";
 	}
@@ -19,7 +19,7 @@ function display_dropdown() {
 function hide_dropdown() {
 	var elements = document.getElementsByClassName('dropdown')[0].getElementsByTagName('li');
 
-	for (var i = 2; i < elements.length; i++) {
+	for (var i = 2; i < elements.length; i += 1) {
 		elements[i].style.visibility = "hidden";
 		elements[i].style.display = "none";
 	}

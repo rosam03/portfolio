@@ -24,9 +24,9 @@
          <div class="dropdown">
             <li id="name" style="float:left; display:inline;"><a class="title" href="#" >ROSA MOHAMMADI</a></li>
             <li onclick="display_dropdown()" style="clear:none;" id="nav-btn"><a href="javascript:void(0)"><img src="http://www.myiconfinder.com/uploads/iconsets/256-256-042663fcf25e4dfa31c246813829b3d5.png"></a></li>
-            <li><a class="active" href="#" onclick="hide_dropdown()">PORTFOLIO</a></li>
-            <li><a href="about.html" >ABOUT ME</a></li>
             <li><a href="index.html" >HOME</a></li>
+            <li><a href="about.html" >ABOUT ME</a></li>
+            <li><a class="active" href="#" onclick="hide_dropdown()">PORTFOLIO</a></li>
          </div>
       </div>
       </div onclick="hide_dropdown()">
@@ -41,27 +41,89 @@
          <div class="project">
             <div class="description">
                <div class="feature"><a>FEATURED</a></div>
-               <h1>Agriculture Optimization</h1>
+               <h1>Precision Agriculture</h1>
+               <h5>Sensor Technology</h5>
                <p>In a team of 5, we are building a mesh network of sensors to monitor the environment plants grow in to optimize plant production and profitability.
                <ul>
+                 <li>Responsible for software design and algorithms</li>
+                 <li>Implementing wireless mesh communication (ZigBee), temperature, and humidity sensors</li>
                   <li>Gathered requirements and produced design</li>
-                  <li>Currently building prototype and developing code</li>
+                  <li>Leading team through best practices such as test-driven development, code
+modularity, pair programming, code reviews</li>
                </ul>
                </p>
                <p class="skills">Skills: C </br></br>
-                  Microcontrollers, embedded technology
+                  Microcontrollers, embedded technology, sensors
                </p>
             </div>
             <div class="img">
                <img src="images/p_agriculture.jpg">
             </div>
          </div>
+
+         <div class="project">
+            <div class="description">
+              <div class="feature"><a>UNDER DEVELOPMENT</a></div>
+               <h1>Distributed Key-Value Store</h1>
+               <h5>Web App</h5>
+               <p>As a team, we are currently designing and developing a key-value store to support multiple
+synchronous clients, while handling issues due to an unreliable platform.
+               <ul>
+                 <li>At-most-once semantics: implemented response caching, avoiding re-execution of
+requests to reduce load on server</li>
+                 <li>Improved support for multiple clients with a multithreaded solution</li>
+                 <li>Implemented a Producer-Consumer queue using a Thread Pool to handle
+thousands of requests per second, improving the servers throughput</li>
+  <li>Optimized solution for memory space, ranking in the top 5% amongst classmates</li>
+  <li>Built monitoring tools (web application) to select the ‘best’ servers to deploy to based on
+availability, CPU utilization, disk usage, and average load</li>
+<li>Developed tools to automatically start and stop applications on a group of servers</li>
+
+               </ul>
+               </p>
+               <p class="skills">Skills: Java, Python, HTML, CSS </br></br>
+                  Amazon Web Services (EC2), PlanetLab servers, concurrency, performance tuning
+               </p>
+            </div>
+            <!--
+            <div class="img">
+               <img src="images/distributed.jpg">
+            </div>
+          -->
+         </div>
+
+         <div class="project">
+            <div class="description">
+               <h1>Client Website Transformation</h1>
+               <h5>Website</h5>
+               <p>
+               <ul>
+                 <li>Switched website hosting, saving client annual costs</li>
+                 <li>Reduced page load times by deploying to geographic location targeted towards clients</li>
+                 <li>Implemented responsive design to cater to different devices</li>
+                 <li>Redesigned and modernized website</li>
+               </ul>
+               </p>
+               <p class="skills">Skills: JavaScript, HTML, CSS </br></br>
+                  Amazon Web Services (S3, Route53)
+               </p>
+            </div>
+
+            <div class="img">
+               <img src="images/NatureCleaning2.jpg">
+
+            </div>
+
+         </div>
+
          <div class="project">
             <div class="description">
                <h1>Restaurant Ordering Management System</h1>
+               <h5>Web App, Android App</h5>
                <p>In a team of 4, we created an ordering system that allows customers to wirelessly order from their table, sending this data to a mobile app to be tracked by waiters, and providing high-resolution analytics to help managers make informed decisions.
                <ul>
                   <li>Implemented Bluetooth between microcontroller and Android mobile app</li>
+                  <li>Implemented Android background activities and notifications</li>
                   <li>Designed API to enable mobile and web app interaction with server</li>
                   <li>Increased security of system by assigning roles and authorization tokens to users to enforce Principles of Least Privilege</li>
                   <li>Implemented login functionality and menu form on web app</li>
@@ -75,9 +137,58 @@
                <img src="images/p_datadining1.png">
             </div>
          </div>
+
+         <div class="project">
+            <div class="description">
+              <div class="feature"><a>OPEN SOURCE</a></div>
+               <h1>Automatic SSL Expiry Detection</h1>
+               <h5>Tools</h5>
+               <p>Keep your sites up to date. Using a list of domains, find out which ones have SSL certificates that are expiring soon. Results can be seen via command-line or printed in a Slack channel of your choosing.
+               <ul>
+                 <li>Integrated with Slack API to display results more conveniently</li>
+                 <li>Integrated with openSSL to obtan SSL certificate expiry dates</li>
+                 <li>Made use of chron jobs to automate repetitive tasks</li>
+               </ul>
+               </p>
+               <p class="skills">Skills: Python </br></br>
+                 API, Automation, Chron, Requests
+
+               </p>
+            </div>
+
+            <div class="img">
+               <img src="images/slack.jpg">
+            </div>
+
+         </div>
+
+         <div class="project">
+            <div class="description">
+              <div class="feature"><a>OPEN SOURCE</a></div>
+               <h1>MediaWiki Auth Library</h1>
+               <h5>Tools</h5>
+               <p>This library can be used to authenticate and make meaningful queries to a semantic mediawiki instance.
+               <ul>
+                 <li>Integrated with Semantic MediaWiki API to authenticate</li>
+                 <li>Implemented functionality to edit and query pages</li>
+               </ul>
+               </p>
+               <p class="skills">Skills: Python </br></br>
+                 API, Requests
+               </p>
+            </div>
+
+            <div class="img">
+               <img src="images/SMW.jpg">
+            </div>
+
+         </div>
+
+
          <div class="project">
             <div class="description">
                <h1>UBC Library Finder</h1>
+               <h5>Android App</h5>
                <p>Created a simple Android app to provide directions to the nearest UBC library using the Google Maps API.
                </p>
                <p class="skills">Skills: Java</br></br>
@@ -88,10 +199,13 @@
                <img src="images/p_ubclibrary.png" width="90%" height="90%">
             </div>
          </div>
+
+
          <div class="project">
             <div class="description">
                <div class="feature"><a>UNDER DEVELOPMENT</a></div>
                <h1>Instagram Business Social</h1>
+               <h5>Web App</h5>
                <p>Currently building a custom web application to help clients reach their desired target audience on Instagram. The client specifies a hashtag that their audience may use and the application searches for users using that hashtag. The application interacts with these users from the clients Instagram page, increasing user engagement and attracting potential business.
                <ul>
                   <li>Interfaced with the Instagram API to authenticate users and perform specific actions</li>
@@ -105,6 +219,24 @@
             <div class="img">
             </div>
          </div>
+
+         <div class="project">
+            <div class="description">
+               <h1>Mock UBC Bookstore</h1>
+               <h5>Web App</h5>
+               <p>In a team of 2, we developed a mock bookstore allowing a customer to add/remove items from their cart and check out. We made use of interval timers to check for user inactivity, a database to store product and order information, and a server to handle the orders and inventory.
+               </p>
+               <p class="skills">Skills: MongoDB, JavaScript, Node.js, HTML, CSS</br></br>
+                  Full stack web development, Web API, Heroku deployment platform
+               </p>
+            </div>
+            <div class="img">
+               <img src="images/p_bookstore.png" width="90%" height="90%">
+            </div>
+         </div>
+
+
+
          <div class="project">
             <div class="description">
                <h1>OS161</h1>
@@ -124,24 +256,11 @@
                   Unix operating systems
                </p>
             </div>
-            <div class="img">
-            </div>
+
          </div>
-         <div class="project">
-            <div class="description">
-               <h1>Mock UBC Bookstore</h1>
-               <p>In a team of 2, we developed a mock bookstore allowing a customer to add/remove items from their cart and check out. We made use of interval timers to check for user inactivity, a database to store product and order information, and a server to handle the orders and inventory.
-               </p>
-               <p class="skills">Skills: MongoDB, JavaScript, Node.js, HTML, CSS</br></br>
-                  Full stack web development, Web API, Heroku deployment platform
-               </p>
-            </div>
-            <div class="img">
-               <img src="images/p_bookstore.png" width="90%" height="90%">
-            </div>
-         </div>
-      </div>
-      </div>
+
+
+
 
 			<!-- Footer -->
       <div class="footer">
